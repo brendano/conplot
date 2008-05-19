@@ -1,0 +1,50 @@
+conplot - console plotter via ascii art
+
+Brendan O'Connor - brenocon@gmail.com - http://github.com/brendano/conplot
+
+conplot is designed for when you have a file of lots of numbers and want to
+look at it fast.  Needs many more features, but basics work.
+
+Usage: pipe a column of numbers on stdin to conplot.rb.  Tries to be smart
+about other junk in the file.
+
+Example: time.log is a big list of numbers from a (while sleep 1; do wc -l db;
+done) loop.  I want to know how fast the db is growing over time.
+
+
+$ wc -l time.log
+   77879 time.log
+
+$ head -2 time.log
+35      db
+36      db
+
+$ tail -2 time.log
+14540   db
+14540   db
+
+$ cat time.log | conplot                                            
+14601                                                                     
+                                                                         oooooooo
+                                                                    oooooo
+                                                            ooooooooo     
+                                                 oooooooooooo             
+11269                                     oooooooo                        
+                                       oooo                               
+                                     ooo                                  
+                                  oooo                                    
+                                 oo                                       
+                               ooo                                        
+7271                       ooooo                                          
+                        oooo                                              
+                     oooo                                                 
+                  oooo                                                    
+               oooo                                                       
+            oooo                                                          
+3272       oo                                                             
+           o                                                              
+           o                                                              
+          oo                                                              
+        ooo                                                               
+      ooo                                                                 
+-726  0                                                                   76826
