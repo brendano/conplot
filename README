@@ -2,11 +2,12 @@ conplot - console plotter via ascii art
 
 Brendan O'Connor - brenocon@gmail.com - http://github.com/brendano/conplot
 
-conplot is designed for when you have a file of lots of numbers and want to
-look at it fast.  Needs many more features, but basics work.
+conplot is a script for when you have a file or stream of lots of numbers and
+want to look at it fast.  Needs many more features, but basics work.
 
 Usage: pipe a column of numbers on stdin to conplot.rb.  Tries to be smart
-about other junk in the file.
+about other junk in the file.  It is intended to work with shell tools like
+perl -pe, awk/sed, wc, du, sort|uniq -c and the like.
 
 Example: time.log is a big list of numbers from a (while sleep 1; do du -m db;
 done) loop.  I want to know how fast the db is growing over time.
@@ -48,3 +49,9 @@ $ cat time.log | conplot
         ooo                                                               
       ooo                                                                 
 -726  0                                                                   76826
+
+
+Features to do, that probably will never get done
+ * scatterplots!!!  x,y as two columns on stdin.  almost already supported.
+ * size according to terminal size (e.g. look at stty -a)
+ * histograms
