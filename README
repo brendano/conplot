@@ -8,7 +8,7 @@ look at it fast.  Needs many more features, but basics work.
 Usage: pipe a column of numbers on stdin to conplot.rb.  Tries to be smart
 about other junk in the file.
 
-Example: time.log is a big list of numbers from a (while sleep 1; do wc -l db;
+Example: time.log is a big list of numbers from a (while sleep 1; do du -m db;
 done) loop.  I want to know how fast the db is growing over time.
 
 
