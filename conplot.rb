@@ -1,8 +1,9 @@
 #!/usr/bin/env ruby
 #
 # conplot.rb -- reads a column of numbers and plots them on the console
-# Brendan O'Connor - brenocon@gmail.com
-# http://github.com/brendano/conplot
+# Main site: http://github.com/brendano/conplot
+# Introduction: http://anyall.org/blog/2008/05/conplot-a-console-plotter/
+# Brendan O'Connor - brenocon@gmail.com - anyall.org
 
 
 require 'pp'

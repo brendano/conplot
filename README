@@ -54,4 +54,4 @@ $ cat time.log | conplot
 Features to do, that probably will never get done
  * scatterplots!!!  x,y as two columns on stdin.  almost already supported.
  * size according to terminal size (e.g. look at stty -a)
- * histograms
+ * histograms should be integrated as an option -- or, use github.com/stevej/conhist
