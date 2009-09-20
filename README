@@ -26,7 +26,7 @@ $ tail -2 time.log
 
 $ cat time.log | conplot                                            
 14601                                                                     
-                                                                         oooooooo
+                                                                         oooooo
                                                                     oooooo
                                                             ooooooooo     
                                                  oooooooooooo             
@@ -48,7 +48,7 @@ $ cat time.log | conplot
           oo                                                              
         ooo                                                               
       ooo                                                                 
--726  0                                                                   76826
+-726  0                                                                  76826
 
 
 Features to do, that probably will never get done

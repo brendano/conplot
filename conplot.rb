@@ -24,7 +24,7 @@ module ConPlot
     end
     
     def console_rows
-      24
+      23
     end
 
     def console_cols
