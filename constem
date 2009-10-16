@@ -1,0 +1,2 @@
+#!/usr/bin/env Rscript --vanilla
+stem(scan(file("stdin")))
